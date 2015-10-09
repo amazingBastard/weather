@@ -83,6 +83,7 @@ app/                # Application folder
     methods/            # Server methods
     publications/       # Collection publications
     startup/            # On server startup
+  tests/              # All tests
 environments/       # Environments folder
   local/              # local environment
   production/         # production environment
@@ -110,6 +111,8 @@ environments/       # Environments folder
 * Development
   * [flemay:less-autoprefixer](https://github.com/flemay/less-autoprefixer)
   * [msavin:mongol](https://github.com/msavin/Mongol)
+* Tests
+  * [xolvio:cucumber](https://github.com/xolvio/meteor-cucumber)
 
 ## License
 
