@@ -1,3 +1,3 @@
 Meteor.startup(function () {
-    React.render(<App />, document.getElementById('renderTarget'));
+    React.render(<App />, document.getElementById('app'));
 });
