@@ -1,7 +1,7 @@
 App = React.createClass({
     render() {
         return (
-            <div className="app layout">
+            <div className="layout">
                 <header className="header">
                     <h1>Weather Component</h1>
                 </header>
