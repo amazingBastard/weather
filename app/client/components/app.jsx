@@ -3,13 +3,13 @@ App = React.createClass({
         return (
             <div className="layout">
                 <header className="header">
-                    <h1>Weather Component</h1>
+                    <Header />
                 </header>
                 <main className="main">
-                    <p>Main Weather Widget</p>
+                    <Weather />
                 </main>
                 <footer className="footer">
-                    <p>footer</p>
+                    <Footer />
                 </footer>
             </div>
         );
