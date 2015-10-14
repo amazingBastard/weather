@@ -1,0 +1,1 @@
+REST2DDP = DDP.connect('http://rest2ddp.meteor.com/');

@@ -1,0 +1,1 @@
+openweather = new Mongo.Collection('openweather', {connection: REST2DDP});
