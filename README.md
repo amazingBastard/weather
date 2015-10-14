@@ -109,9 +109,9 @@ environments/       # Environments folder
 * UI and UX
   * [natestrauser:animate-css](https://github.com/nate-strauser/meteor-animate-css)
 * Development
-  * [flemay:less-autoprefixer](https://github.com/flemay/less-autoprefixer)
-  * [msavin:mongol](https://github.com/msavin/Mongol)
+  * [fourseven:scss](https://github.com/fourseven/meteor-scss)
 * Tests
+  * [sanjo:jasmine](https://github.com/xolvio/meteor-jasmine)
   * [xolvio:cucumber](https://github.com/xolvio/meteor-cucumber)
 
 ## License
