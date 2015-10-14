@@ -19,7 +19,7 @@ ecmascript              # Enable ECMAScript2015+ syntax in app code
 react
 fastclick
 check
-msavin:mongol
 flemay:less-autoprefixer
 natestrauser:animate-css
 xolvio:cucumber
+sanjo:jasmine
