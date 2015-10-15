@@ -1,13 +1,13 @@
 Layout = React.createClass({
     render() {
         return (
-            <div className="layout">
+            <layout className="animated fadeIn layout">
                 <Header />
 
                 {this.props.content}
 
                 <Footer />
-            </div>
+            </layout>
         );
     }
 });

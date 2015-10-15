@@ -6,3 +6,12 @@ FlowRouter.route('/', {
         });
     }
 });
+
+FlowRouter.route('/:_id', {
+    name: 'Project',
+    action(params) {
+        ReactLayout.render(Layout, {
+            content: <Weather _id={params._id} />
+        });
+    }
+});
