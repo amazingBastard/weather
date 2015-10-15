@@ -1,7 +1,7 @@
 Header = React.createClass({
     render() {
         return (
-            <header className="header module">
+            <header className="animated fadeInDown header module">
                 header component
             </header>
         )

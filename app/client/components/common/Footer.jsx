@@ -1,7 +1,7 @@
 Footer = React.createClass({
     render() {
         return (
-            <footer className="footer module">
+            <footer className="animated fadeInUp footer module">
                 footer component
             </footer>
         )

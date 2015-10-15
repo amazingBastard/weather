@@ -1,7 +1,7 @@
 Layout = React.createClass({
     render() {
         return (
-            <layout className="animated fadeIn layout">
+            <layout className="layout">
                 <Header />
 
                 {this.props.content}
