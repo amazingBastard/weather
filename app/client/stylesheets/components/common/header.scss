@@ -1,0 +1,13 @@
+@import '../../_variables';
+
+.header.module {
+  position: relative;
+  text-align: center;
+
+  .logo {
+    margin: 0;
+    padding: $space-tiny;
+    background-color: $neutral-color;
+    color: $gray-light;
+  }
+}

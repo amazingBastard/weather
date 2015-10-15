@@ -1,0 +1,12 @@
+@import '../../_variables';
+
+.footer.module {
+  position: relative;
+  text-align: center;
+
+  .copyright {
+    margin: 0;
+    padding: $space-tiny;
+    font-size: $font-size-tiny;
+  }
+}

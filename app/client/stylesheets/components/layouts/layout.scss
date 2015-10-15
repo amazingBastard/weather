@@ -1,7 +1,5 @@
 @import '../../_variables';
 
-// layout styles
-
 html {
   width: $full;
   height: $full;
@@ -21,19 +19,9 @@ html {
       flex-direction: column;
       overflow: hidden;
 
-      .header {
-        position: relative;
-        text-align: center;
-      }
-
       .view {
         position: relative;
         flex: 1;
-      }
-
-      .footer {
-        position: relative;
-        text-align: center;
       }
     }
   }
