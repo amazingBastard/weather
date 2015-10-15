@@ -2,7 +2,7 @@
 
 Mobile-first weather widget built with Meteor and React.
 
-[VIEW THE DEMO](http://weather.meteor.com)
+[VIEW THE DEMO](http://reactweather.meteor.com)
 
 * [Roadmap](#roadmap)
 * [How to use](#how-to-use)

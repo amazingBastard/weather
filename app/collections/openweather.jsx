@@ -1,1 +1,1 @@
-openweather = new Mongo.Collection('openweather', {connection: REST2DDP});
+Openweather = new Mongo.Collection('openweather', {connection: api});

@@ -1,1 +1,1 @@
-REST2DDP = DDP.connect('http://rest2ddp.meteor.com/');
+api = DDP.connect('http://rest2ddp.meteor.com/');

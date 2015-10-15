@@ -4,10 +4,10 @@ Weather = React.createClass({
 
     getMeteorData() {
         var data = {},
-            handle = REST2DDP.subscribe('rest2ddp', 'open-weather', {});
+            handle = api.subscribe('rest2ddp', 'open-weather', {});
 
         if (handle.ready()) {
-            data.cities = openweather.find({}, {sort: {_id: 1}}).fetch();
+            data.cities = Openweather.find({}, {sort: {_id: 1}}).fetch();
         }
 
         return data;
@@ -25,9 +25,9 @@ Weather = React.createClass({
                     <div className="temp">
                         <h2 className="current">{city.main.temp}ºF</h2>
 
-                        <p className="low">{city.main.temp_min}</p>
+                        <p className="low">low: {city.main.temp_min}</p>
 
-                        <p className="high">{city.main.temp_max}</p>
+                        <p className="high">high: {city.main.temp_max}</p>
                     </div>
                 </section>
             )
@@ -37,6 +37,7 @@ Weather = React.createClass({
     render() {
         return (
             <div className="weather component">
+                <SelectCity />
                 {(this.data.cities) ? this.renderCities() : 'loading'}
             </div>
         )
