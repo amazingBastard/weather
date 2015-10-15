@@ -1,0 +1,14 @@
+@import '_variables';
+
+// buttons
+
+.button {
+  display: block;
+  position: relative;
+  margin: 0;
+  padding: $space-base;
+  outline: none;
+  font-size: $font-size-large;
+  text-align: center;
+  text-decoration: none;
+}

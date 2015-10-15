@@ -22,11 +22,18 @@ html {
       overflow: hidden;
 
       .header {
-
+        position: relative;
+        text-align: center;
       }
 
       .view {
+        position: relative;
         flex: 1;
+      }
+
+      .footer {
+        position: relative;
+        text-align: center;
       }
     }
   }
