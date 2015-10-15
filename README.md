@@ -19,6 +19,15 @@ Mobile-first weather widget built with Meteor and React.
 * Security (permissions, accounts, index by userId)
 * Mobile native (cardovo, phonegap)
 
+### Functionality
+
+```
+Router renders /:city (new-york is default)
+weather module fetches data by name of current route
+select city form changes to route of value on submit
+
+```
+
 ## How to use
 
 ### Requirements
