@@ -7,11 +7,11 @@ FlowRouter.route('/', {
     }
 });
 
-FlowRouter.route('/:_id', {
-    name: 'Project',
+FlowRouter.route('/:name', {
+    name: 'Weather',
     action(params) {
         ReactLayout.render(Layout, {
-            content: <Weather _id={params._id} />
+            content: <Weather name={params.name} />
         });
     }
 });
