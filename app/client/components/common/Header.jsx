@@ -1,7 +1,7 @@
 Header = React.createClass({
     render() {
         return (
-            <div className="header component">
+            <div className="header module">
                 header component
             </div>
         )

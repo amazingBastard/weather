@@ -1,9 +1,9 @@
 SelectCity = React.createClass({
     render() {
         return (
-            <div className="select city">
+            <form className="select city form">
                 select city component
-            </div>
+            </form>
         )
     }
 });

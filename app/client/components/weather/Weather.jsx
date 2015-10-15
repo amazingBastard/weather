@@ -7,7 +7,7 @@ Weather = React.createClass({
             handle = api.subscribe('rest2ddp', 'open-weather', {});
 
         if (handle.ready()) {
-            data.cities = Openweather.find({}, {sort: {_id: 1}}).fetch();
+            data.cities = Openweather.find({name: 'New York'}).fetch();
         }
 
         return data;
@@ -16,29 +16,29 @@ Weather = React.createClass({
     renderCities() {
         return this.data.cities.map(function (city) {
             return (
-                <section className="city" key={city._id}>
+                <div className="city" key={city._id}>
+                    <SelectCity />
                     <h1 className="location">
                         {city.name}
                         <small className="icon">{city.weather[0].description}</small>
                     </h1>
 
                     <div className="temp">
-                        <h2 className="current">{city.main.temp}ºF</h2>
+                        <h2 className="current">{city.main.temp}ºC</h2>
 
                         <p className="low">low: {city.main.temp_min}</p>
 
                         <p className="high">high: {city.main.temp_max}</p>
                     </div>
-                </section>
+                </div>
             )
         });
     },
 
     render() {
         return (
-            <div className="weather component">
-                <SelectCity />
-                {(this.data.cities) ? this.renderCities() : 'loading'}
+            <div className="weather module">
+                {(this.data.cities) ? this.renderCities() : <Loading />}
             </div>
         )
     }
