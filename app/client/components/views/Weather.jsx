@@ -42,6 +42,7 @@ Weather = React.createClass({
         return (
             <main className="animated fadeIn weather view">
                 {(this.data.city) ? this.renderFigure() : <Loading />}
+                <a className="back button" href="/">Choose another city</a>
             </main>
         )
     }
