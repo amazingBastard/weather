@@ -1,0 +1,21 @@
+@import '../../_variables';
+
+.weather.view {
+
+  .city {
+    margin: $space-base auto;
+    padding: $space-base;
+    text-align: center;
+
+    .caption {
+
+      .name {
+        margin: 0;
+      }
+
+      .description {
+        margin: 0;
+      }
+    }
+  }
+}

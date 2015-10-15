@@ -127,6 +127,7 @@ environments/       # Environments folder
   * [datariot:ganalytics](https://github.com/datariot/meteor-ganalytics)
 * UI/UX
   * [natestrauser:animate-css](https://github.com/nate-strauser/meteor-animate-css)
+  * [russ:weather-icons](https://github.com/erikflowers/weather-icons)
 * Development
   * [fourseven:scss](https://github.com/fourseven/meteor-scss)
 * Tests

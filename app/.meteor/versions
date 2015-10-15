@@ -74,6 +74,7 @@ reactive-var@1.0.6
 reload@1.1.4
 retry@1.0.4
 routepolicy@1.0.6
+russ:weather-icons@1.0.0
 sanjo:jasmine@0.20.2
 sanjo:karma@3.0.2
 sanjo:long-running-child-process@1.1.3
