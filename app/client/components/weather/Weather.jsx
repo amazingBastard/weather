@@ -2,11 +2,18 @@ Weather = React.createClass({
     mixins: [ReactMeteorData],
     PropTypes: {},
 
+    shouldComponentUpdate() {
+        return true;
+    },
+
     getMeteorData() {
         var data = {},
+            city = $('.select.input').val(),
             handle = api.subscribe('rest2ddp', 'open-weather', {});
 
         if (handle.ready()) {
+            console.log(city);
+            console.log($('.select.input').val());
             data.cities = Openweather.find({name: 'New York'}).fetch();
         }
 
