@@ -18,10 +18,12 @@ Weather = React.createClass({
     },
 
     renderFigure() {
+        var icon = 'http://openweathermap.org/img/w/' + this.data.city.weather[0].icon + '.png';
         return (
             <figure className="city" key={this.data.city._id}>
                 <figcaption className="caption">
                     <h1 className="name">{this.data.city.name}</h1>
+                    <img className="icon" src={icon} />
                     <p className="description">{this.data.city.weather[0].description}</p>
                 </figcaption>
 
