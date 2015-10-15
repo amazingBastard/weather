@@ -22,9 +22,9 @@ Mobile-first weather widget built with Meteor and React.
 ### Functionality
 
 ```
-Router renders /:city (new-york is default)
-weather module fetches data by name of current route
-select city form changes to route of value on submit
+root view component fetches weather for cities from openweather api
+   renders list of links to /:name for each city
+weather view component fetches data using this city's name route parameter 
 
 ```
 
