@@ -8,12 +8,9 @@ Weather = React.createClass({
 
     getMeteorData() {
         var data = {},
-            city = $('.select.input').val(),
             handle = api.subscribe('rest2ddp', 'open-weather', {});
 
         if (handle.ready()) {
-            console.log(city);
-            console.log($('.select.input').val());
             data.cities = Openweather.find({name: 'New York'}).fetch();
         }
 
@@ -22,6 +19,7 @@ Weather = React.createClass({
 
     renderCities() {
         return this.data.cities.map(function (city) {
+
             return (
                 <div className="city" key={city._id}>
                     <SelectCity />

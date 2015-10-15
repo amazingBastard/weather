@@ -87,6 +87,7 @@ app/                # Application folder
   lib/                # Lib files that get executed first
   public/             # Public files
     images/             # Public image files
+  router/             # Router (routes, router config)
   server/             # Server folder
     fixtures/           # Meteor.Collection fixtures defined
     methods/            # Server methods
@@ -115,7 +116,16 @@ environments/       # Environments folder
   * [tracker](https://github.com/meteor/meteor/tree/devel/packages/tracker)
   * [check](https://github.com/meteor/meteor/tree/devel/packages/check)
   * [fastclick](http://github.com/meteor/meteor/tree/devel/packages/fastclick)
-* UI and UX
+* Routing
+  * [kadira:flow-router](https://github.com/kadirahq/flow-router)
+  * [kadira:react-layout](https://github.com/kadirahq/meteor-react-layout)
+  * [meteorhacks:fast-render](https://github.com/meteorhacks/fast-render)
+* SEO
+  * [spiderable](http://github.com/meteor/meteor/tree/devel/packages/spiderable)
+  * [tomwasd:flow-router-seo](https://github.com/tomwasd/flow-router-seo)
+* Analytics 
+  * [datariot:ganalytics](https://github.com/datariot/meteor-ganalytics)
+* UI/UX
   * [natestrauser:animate-css](https://github.com/nate-strauser/meteor-animate-css)
 * Development
   * [fourseven:scss](https://github.com/fourseven/meteor-scss)
