@@ -8,7 +8,64 @@
   margin: 0;
   padding: $space-base;
   outline: none;
-  font-size: $font-size-large;
+  font-size: $font-size-base;
   text-align: center;
   text-decoration: none;
+  
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+
+  &.weather {
+    overflow: hidden;
+    font-size: $font-size-large;
+
+    .name {
+      display: block;
+      position: relative;
+
+      &:before {
+        content: attr(data-letters);
+        position: absolute;
+        left: 0;
+        width: 0%;
+        overflow: hidden;
+        white-space: nowrap;
+        color: $light;
+        transition: width $faster;
+        transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+      }
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: $full;
+      width: $full;
+      z-index: -1;
+      background: $link-color;
+      transform: translate3d(101%,0,0);
+      transition: transform $faster;
+      transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+    }
+
+    &:hover,
+    &:focus {
+      color: $link-color;
+
+      .name {
+
+        &:before {
+          width: $full;
+        }
+      }
+
+      &:after {
+        transform: translate3d(0,0,0);
+      }
+    }
+  }
 }
