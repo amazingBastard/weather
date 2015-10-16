@@ -1,20 +1,29 @@
 @import '../../_variables';
 
 .weather.view {
+  display: flex;
+  min-height: $fluid-half;
+  flex-direction: column;
 
-  .city {
-    margin: $space-base auto;
-    padding: $space-base;
+  .city.figure {
+    flex: 1;
+    margin: 0;
+    padding: 0;
     text-align: center;
 
     .caption {
+      padding: $space-base;
+      background-color: $primary-color;
 
       .name {
         margin: 0;
+        color: $light;
+        font-size: $font-size-large;
       }
 
       .description {
         margin: 0;
+        color: $neutral-color;
       }
     }
   }
