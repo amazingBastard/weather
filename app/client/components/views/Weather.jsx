@@ -1,8 +1,9 @@
 function roundTemp(temp) {
-    if(temp) {
-        return <span>{ Math.round(temp) }<sup>º</sup>C</span>;
+    if (temp) {
+        return <span className="meta">{ Math.round(temp) }<sup>º</sup>C</span>;
+    } else {
+        return null;
     }
-    return null;
 }
 
 Weather = React.createClass({
