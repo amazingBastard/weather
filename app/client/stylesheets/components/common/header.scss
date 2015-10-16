@@ -3,12 +3,38 @@
 .header.module {
   position: relative;
   text-align: center;
+  z-index: 1;
+  
+  .route {
+    text-decoration: none;
+    
+    .title {
+      margin: 0;
+      padding: $space-tiny;
+      background-color: $neutral-color;
+      color: $gray-light;
+      font-size: $font-size-small;
+      transition: color $faster;
 
-  .logo {
-    margin: 0;
-    padding: $space-tiny;
-    background-color: $neutral-color;
-    color: $gray-light;
-    font-size: $font-size-small;
+      .logo {
+        width: $space-large;
+        margin-bottom: -$space-large;
+        padding: $space-tiny;
+        background: $neutral-color;
+        border-radius: $half;
+        transition: all $faster ease-in-out 0s;
+      }
+    }
+
+    &:hover {
+
+      .title {
+        color: $primary-color;
+
+        .logo {
+          transform: rotate(360deg);
+        }
+      }
+    }
   }
 }
