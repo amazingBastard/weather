@@ -8,9 +8,12 @@
   margin: 0;
   padding: $space-base;
   outline: none;
+  font-family: $font-family-header;
   font-size: $font-size-base;
+  font-weight: bold;
   text-align: center;
   text-decoration: none;
+  letter-spacing: $space-atomic;
   
   &:hover,
   &:focus {
@@ -21,6 +24,7 @@
     overflow: hidden;
     background-color: transparent;
     font-size: $font-size-large;
+    color: $primary-color;
     transition: all $fast;
 
     .name {
@@ -48,14 +52,14 @@
       height: $full;
       width: $full;
       z-index: -1;
-      background: $link-color;
+      background: $primary-color;
       transform: translate3d(101%,0,0);
       transition: transform $faster;
       transition-timing-function: cubic-bezier(0.7,0,0.3,1);
     }
 
     &:hover {
-      color: $link-color;
+      color: $primary-color;
 
       .name {
 

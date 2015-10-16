@@ -12,6 +12,7 @@
     text-align: center;
 
     .caption {
+      margin: 0;
       padding: $space-base;
       background-color: $primary-color;
 
@@ -24,6 +25,14 @@
       .description {
         margin: 0;
         color: $neutral-color;
+      }
+    }
+
+    .temp {
+
+      .current {
+        margin: $space-base auto;
+        font-size: $space-huge;
       }
     }
   }
