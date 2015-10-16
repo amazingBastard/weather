@@ -42,12 +42,8 @@ html {
         text-decoration: underline;
       }
 
-      &:visited {
-        color: $highlight-color;
-      }
-
       &:active {
-        color: $highlight-color;
+        color: $primary-color;
         text-decoration: underline;
       }
     }
