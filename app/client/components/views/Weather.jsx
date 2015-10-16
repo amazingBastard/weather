@@ -35,11 +35,10 @@ Weather = React.createClass({
                 </figcaption>
 
                 <div className="temp">
-                    <h1 className="current">{roundTemp(this.data.city.main.temp)}</h1>
-
-                    <p className="low">low: {roundTemp(this.data.city.main.temp_min)}</p>
-
-                    <p className="high">high: {roundTemp(this.data.city.main.temp_max)}</p>
+                    <h1 className="current">
+                        {roundTemp(this.data.city.main.temp)}
+                        <small className="range">{roundTemp(this.data.city.main.temp_min)} - {roundTemp(this.data.city.main.temp_max)}</small>
+                    </h1>
                 </div>
             </figure>
         )

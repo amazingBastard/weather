@@ -13,7 +13,7 @@
 
     .caption {
       margin: 0;
-      padding: $space-base;
+      padding: $space-base + $space-tiny;
       background-color: $primary-color;
 
       .name {
@@ -34,6 +34,13 @@
         margin: $space-base auto;
         font-size: $space-huge;
         font-weight: bold;
+
+        .range {
+          display: block;
+          color: $gray-light;
+          font-size: $quarter + 10%;
+          letter-spacing: $space-atomic;
+        }
       }
     }
   }
