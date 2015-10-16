@@ -1,3 +1,10 @@
+function roundTemp(temp) {
+    if(temp) {
+        return <span>{ Math.round(temp) }<sup>º</sup>C</span>;
+    }
+    return null;
+}
+
 Weather = React.createClass({
     mixins: [ReactMeteorData],
     PropTypes: {},
@@ -22,15 +29,16 @@ Weather = React.createClass({
             <figure className="city figure" key={this.data.city._id}>
                 <figcaption className="caption">
                     <h1 className="name">{this.data.city.name}</h1>
+
                     <p className="description">[{this.data.city.weather[0].description}]</p>
                 </figcaption>
 
                 <div className="temp">
-                    <h1 className="current">{this.data.city.main.temp}ºC</h1>
+                    <h1 className="current">{roundTemp(this.data.city.main.temp)}</h1>
 
-                    <p className="low">low: {this.data.city.main.temp_min}</p>
+                    <p className="low">low: {roundTemp(this.data.city.main.temp_min)}</p>
 
-                    <p className="high">high: {this.data.city.main.temp_max}</p>
+                    <p className="high">high: {roundTemp(this.data.city.main.temp_max)}</p>
                 </div>
             </figure>
         )
