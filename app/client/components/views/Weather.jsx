@@ -34,7 +34,7 @@ Weather = React.createClass({
                     <p className="description">[{this.data.city.weather[0].description}]</p>
                 </figcaption>
 
-                <div className="temp">
+                <div className="animated fadeInUp temp">
                     <h1 className="current">
                         {roundTemp(this.data.city.main.temp)}
                         <small className="range">{roundTemp(this.data.city.main.temp_min)} - {roundTemp(this.data.city.main.temp_max)}</small>
@@ -48,7 +48,11 @@ Weather = React.createClass({
         return (
             <main className="animated fadeIn weather view">
                 {(this.data.city) ? this.renderFigure() : <Loading />}
-                <a className="back button" href="/">Choose another city</a>
+                <a className="back button" href="/">
+                    <span className="label">
+                        Choose another city
+                    </span>
+                </a>
             </main>
         )
     }

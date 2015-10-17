@@ -1,7 +1,9 @@
 Loading = React.createClass({
     render() {
         return (
-            <loader className="loading module"></loader>
+            <div className="loading module">
+                <loader className="loader"></loader>
+            </div>
         )
     }
 });

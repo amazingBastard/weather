@@ -1,22 +1,32 @@
 @import '../../_variables';
 
 .loading.module {
-  position: absolute;
-  left: calc(50% - 40px);
-  top: calc(50% - 40px);
-  height: 80px;
-  width: 80px;
-  clip: rect(0, 80px, 80px, 40px);
-  animation: spin $slow linear infinite;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: $full;
+  width: $full;
+  background: $background-color;
+  z-index: 1;
 
-  &:after {
+  .loader {
     position: absolute;
+    left: calc(50% - 40px);
+    top: calc(50% - 40px);
     height: 80px;
     width: 80px;
-    content:'';
-    border-radius: $half;
     clip: rect(0, 80px, 80px, 40px);
-    animation: fluctuate $slow ease-in-out infinite;
+    animation: spin $slow linear infinite;
+
+    &:after {
+      position: absolute;
+      height: 80px;
+      width: 80px;
+      content:'';
+      border-radius: $half;
+      clip: rect(0, 80px, 80px, 40px);
+      animation: fluctuate $slow ease-in-out infinite;
+    }
   }
 }
 
