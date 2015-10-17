@@ -1,6 +1,6 @@
 function roundTemp(temp) {
     if (temp) {
-        return <span className="meta">{ Math.round(temp) }<sup>º</sup>C</span>;
+        return <span className="meta">{ Math.round(temp) }<sup>º</sup>F</span>;
     } else {
         return null;
     }

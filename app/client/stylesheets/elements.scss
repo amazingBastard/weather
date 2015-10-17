@@ -76,6 +76,63 @@
   }
 
   &.back {
+    margin: $space-base;
+    padding: $space-mini;
 
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      width: $full;
+      height: $space-atomic;
+      background: $primary-color;
+      transform: scale3d(0,1,1);
+      transition: transform $faster;
+      z-index: -1;
+    }
+
+    &:before {
+      position: absolute;
+      top: -$space-quantum;
+      right: 0;
+      transform-origin: $full $half;
+    }
+
+    &:after {
+      left: 0;
+      bottom: 0;
+      transform-origin: 0 $half;
+    }
+
+    .label {
+      position: relative;
+      transition: color $faster;
+
+      &:before,
+      &:after {
+        position: absolute;
+        color: $primary-color;
+        opacity: 0;
+        transition: transform $faster, opacity $faster;
+      }
+    }
+
+    &:hover {
+
+      &:before,
+      &:after {
+        transform: scale3d(1,1,1);
+      }
+
+      .label {
+        color: $primary-color;
+
+        &:before,
+        &:after {
+          opacity: 1;
+          transform: translate3d(0,0,0);
+        }
+      }
+    }
   }
 }
