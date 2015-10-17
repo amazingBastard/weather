@@ -15,7 +15,7 @@ Root = React.createClass({
         return this.data.cities.map(function (city) {
             var path = FlowRouter.path('Weather', {name: city.name});
             return (
-                <a className="weather button" href={path} key={city._id}>
+                <a className="animated fadeInUp weather button" href={path} key={city._id}>
                     <span className="name" data-letters={city.name}>{city.name}</span>
                 </a>
             )
