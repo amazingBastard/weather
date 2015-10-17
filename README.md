@@ -72,13 +72,13 @@ app/                # Application folder
   client/             # Client folder
     components/          # Contains react components
       common/             # Common components (i.e. header, footer)
-      elements/           # HTML elements components (i.e. forms, lists, buttons)
       layouts/            # Router layouts
+      views/              # Router views
     stylesheets         # LESS files (with autoprefixer)
       components/         # Components styles
         common/             # Common components styles
-        elements/           # Elements styles
         layouts/            # All layouts styles
+        views/              # View styles
       elements.less       # html elements and modules styles
       helpers.less        # style helpers for global use
       typography.less     # global typigraphy styles
@@ -89,10 +89,6 @@ app/                # Application folder
     images/             # Public image files
   router/             # Router (routes, router config)
   server/             # Server folder
-    fixtures/           # Meteor.Collection fixtures defined
-    methods/            # Server methods
-    publications/       # Collection publications
-    startup/            # On server startup
   tests/              # All tests
 environments/       # Environments folder
   local/              # local environment
