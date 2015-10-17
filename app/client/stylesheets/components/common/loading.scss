@@ -1,0 +1,44 @@
+@import '../../_variables';
+
+.loading.module {
+  position: absolute;
+  left: calc(50% - 40px);
+  top: calc(50% - 40px);
+  height: 80px;
+  width: 80px;
+  clip: rect(0, 80px, 80px, 40px);
+  animation: spin $slow linear infinite;
+
+  &:after {
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    content:'';
+    border-radius: $half;
+    clip: rect(0, 80px, 80px, 40px);
+    animation: fluctuate $slow ease-in-out infinite;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg)
+  }
+  100% {
+    transform: rotate(220deg)
+  }
+}
+
+@keyframes fluctuate {
+  0% {
+    box-shadow: inset $primary-color 0 0 0 $space-base;
+    transform: rotate(-140deg);
+  }
+  50% {
+    box-shadow: inset $primary-color 0 0 0 $space-micro;
+  }
+  100% {
+    box-shadow: inset $primary-color 0 0 0 $space-base;
+    transform: rotate(140deg);
+  }
+}
