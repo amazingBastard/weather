@@ -1,19 +1,15 @@
 describe('Root View Component', function() {
-    var renderComponent, component, el, $el;
+    var component;
 
     beforeEach(function() {
-        renderComponent = function() {
-            component = renderComponent(Root);
-            el = React.findDOMNode(component);
-            $el = $(el);
-        };
+       component =  TestUtils.renderIntoDocument(<Root />)
     });
 
     it('should be mounted in DOM', function() {
-        renderComponent(Root);
+
     });
 
-    it('should get Meteor data from Openweather collection', function() {
+    it('should get Meteor Data from Openweather collection', function() {
 
     });
 
