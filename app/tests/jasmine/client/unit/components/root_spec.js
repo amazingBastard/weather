@@ -11,7 +11,6 @@ describe('Root View Component', function() {
 
     it('should be mounted in DOM', function() {
         renderComponent(Root);
-        //expect($el.length).toEqual(1);
     });
 
     it('should get Meteor data from Openweather collection', function() {
