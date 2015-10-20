@@ -128,7 +128,6 @@ environments/       # Environments folder
 * Tests
   * [sanjo:jasmine](https://github.com/xolvio/meteor-jasmine)
   * [xolvio:cucumber](https://github.com/xolvio/meteor-cucumber)
-  * [mike:mocha](https://github.com/mad-eye/meteor-mocha-web)
 
 ## License
 
