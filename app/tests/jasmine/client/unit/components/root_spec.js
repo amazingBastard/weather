@@ -1,19 +1,22 @@
-describe('Root View Component', function() {
-    var component;
+'use strict';
+var ReactTestUtils;
 
-    beforeEach(function() {
-       component =  TestUtils.renderIntoDocument(<Root />)
+describe('Root View Component', function () {
+
+    beforeEach(function () {
+        ReactTestUtils = React.addons.ReactTestUtils;
     });
 
-    it('should be mounted in DOM', function() {
+    it('should be mounted in DOM', function () {
+        var root = <Root />;
+        ReactTestUtils.renderIntoDocument(root);
+    });
+
+    it('should get Meteor Data from Openweather collection', function () {
 
     });
 
-    it('should get Meteor Data from Openweather collection', function() {
-
-    });
-
-    it('should render options to choose different cities', function() {
+    it('should render options to choose different cities', function () {
 
     });
 });
