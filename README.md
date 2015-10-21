@@ -127,6 +127,7 @@ environments/       # Environments folder
   * [fourseven:scss](https://github.com/fourseven/meteor-scss)
 * Tests
   * [sanjo:jasmine](https://github.com/xolvio/meteor-jasmine)
+  * [velocity:html-reporter](https://github.com/meteor-velocity/html-reporter/)
 
 ## License
 
