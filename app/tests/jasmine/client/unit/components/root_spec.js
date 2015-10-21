@@ -7,6 +7,7 @@ describe('Root View Component', function () {
     beforeEach(function () {
         ReactTestUtils = React.addons.ReactTestUtils;
         meteorData = {};
+        jasmine.addMatchers(customMatcher);
     });
 
     it('should be mounted in DOM', function () {
@@ -17,6 +18,16 @@ describe('Root View Component', function () {
 
     it('should get Meteor Data from Openweather collection', function () {
         expect(meteorData).toBeDefined();
+        var data = {
+            cities: [
+                {'name':'New York'},
+                {'name':'Chicago'},
+                {'name':'Seattle'},
+                {'name':'Houston'},
+                {'name':'San Diego'}
+            ]
+        };
+        expect(data.cities).toContain({name : 'New York'});
     });
 
     it('should render options to choose different cities', function () {
