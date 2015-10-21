@@ -22,6 +22,7 @@ describe('Root View Component', function () {
 
     it('should get Meteor Data from Openweather collection', function () {
         expect(data).toBeDefined();
+        expect(data.cities.length).toBe(5);
         expect(data.cities).toContain({name: 'New York'});
         expect(data.cities).toContain({name: 'Chicago'});
         expect(data.cities).toContain({name: 'Seattle'});
