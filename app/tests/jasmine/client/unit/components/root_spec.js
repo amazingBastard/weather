@@ -1,8 +1,16 @@
 'use strict';
-var ReactTestUtils,
-    meteorData;
 
 describe('Root View Component', function () {
+    var ReactTestUtils,
+        data = {
+            cities: [
+                {'name': 'New York'},
+                {'name': 'Chicago'},
+                {'name': 'Seattle'},
+                {'name': 'Houston'},
+                {'name': 'San Diego'}
+            ]
+        };
 
     beforeEach(function () {
         ReactTestUtils = React.addons.ReactTestUtils;
@@ -16,17 +24,8 @@ describe('Root View Component', function () {
     });
 
     it('should get Meteor Data from Openweather collection', function () {
-        var data = {
-            cities: [
-                {'name':'New York'},
-                {'name':'Chicago'},
-                {'name':'Seattle'},
-                {'name':'Houston'},
-                {'name':'San Diego'}
-            ]
-        };
         expect(data).toBeDefined();
-        expect(data.cities).toContain({name : 'New York'});
+        expect(data.cities).toContain({name: 'New York'});
     });
 
     it('should render options to choose different cities', function () {
