@@ -11,9 +11,9 @@ describe('Root View Component', function () {
             ]
         };
 
-    beforeEach(function () {
-        jasmine.addMatchers(customMatcher);
-    });
+    //beforeEach(function () {
+    //
+    //});
 
     it('should be mounted in DOM', function () {
         var main = document.createElement('main');
