@@ -1,7 +1,17 @@
 'use strict';
 
+var TestUtils = React.addons.TestUtils;
+
+renderComponent = function (comp) {
+    return TestUtils.renderIntoDocument(
+        React.createElement(comp)
+    );
+};
+
+
 describe('Root View Component', function () {
-    var data = {
+    var renderRoot, component, el, $el,
+        data = {
             cities: [
                 {'name': 'New York'},
                 {'name': 'Chicago'},
@@ -11,13 +21,17 @@ describe('Root View Component', function () {
             ]
         };
 
-    //beforeEach(function () {
-    //
-    //});
+    beforeEach(function() {
+        renderRoot = function() {
+            component = renderComponent(Root);
+            el = React.findDOMNode(component);
+            $el = $(el);
+        };
+    });
 
     it('should be mounted in DOM', function () {
-        var main = document.createElement('main');
-        expect($(main).find('.root.view')[0]).toBeDefined();
+        renderRoot();
+        expect($el.length).toEqual(1);
     });
 
     it('should get Meteor Data from Openweather collection', function () {
