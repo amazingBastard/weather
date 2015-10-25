@@ -37,8 +37,16 @@ Weather = React.createClass({
                 <div className="animated fadeInUp temp">
                     <h1 className="current">
                         {roundTemp(this.data.city.main.temp)}
-                        <small className="range">{roundTemp(this.data.city.main.temp_min)} - {roundTemp(this.data.city.main.temp_max)}</small>
+                        <small className="range">{roundTemp(this.data.city.main.temp_min)}
+                            - {roundTemp(this.data.city.main.temp_max)}</small>
                     </h1>
+                    <div className="meta">
+                        <p className="pressure">Pressure [{this.data.city.main.pressure}]</p>
+
+                        <p className="humidity">Humidity [{this.data.city.main.humidity}]</p>
+
+                        <p className="wind">Wind Speed [{this.data.city.wind.speed}]</p>
+                    </div>
                 </div>
             </figure>
         )
