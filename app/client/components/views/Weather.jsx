@@ -40,13 +40,11 @@ Weather = React.createClass({
                         <small className="range">{roundTemp(this.data.city.main.temp_min)}
                             - {roundTemp(this.data.city.main.temp_max)}</small>
                     </h1>
-                    <div className="meta">
-                        <p className="pressure">Pressure [{this.data.city.main.pressure}]</p>
+                    <p className="animated flipInX meta pressure">Pressure / {this.data.city.main.pressure}</p>
 
-                        <p className="humidity">Humidity [{this.data.city.main.humidity}]</p>
+                    <p className="animated flipInX meta humidity">Humidity / {this.data.city.main.humidity}</p>
 
-                        <p className="wind">Wind Speed [{this.data.city.wind.speed}]</p>
-                    </div>
+                    <p className="animated flipInX meta wind">Wind Speed / {this.data.city.wind.speed}</p>
                 </div>
             </figure>
         )

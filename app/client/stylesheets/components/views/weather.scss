@@ -42,6 +42,18 @@
           letter-spacing: $space-atomic;
         }
       }
+
+      .meta {
+        animation-delay: $fast;
+
+        &.humidity {
+          animation-delay: $fast + $faster;
+        }
+
+        &.wind {
+          animation-delay: $slow;
+        }
+      }
     }
   }
 }
