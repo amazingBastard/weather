@@ -5,7 +5,7 @@ Root = React.createClass({
             handle = api.subscribe('rest2ddp', 'open-weather', {});
 
         if (handle.ready()) {
-            data.cities = Openweather.find({}, {sort: {_id: 1}}).fetch();
+            data.cities = Openweather.find().fetch();
         }
 
         return data;
