@@ -1,14 +1,5 @@
 'use strict';
 
-var TestUtils = React.addons.TestUtils;
-
-renderComponent = function (comp) {
-    return TestUtils.renderIntoDocument(
-        React.createElement(comp)
-    );
-};
-
-
 describe('Root View Component', function () {
     var renderRoot, component, el, $el,
         data = {
@@ -45,8 +36,8 @@ describe('Root View Component', function () {
     });
 
     it('should render options to choose different cities', function () {
-        var button = document.createElement('a');
-
-        expect($(button).find('.weather.button')[0]).toBeDefined();
+        renderRoot({});
+        expect($el.find('a')).toBe(true);
+        // @TODO: break this up
     });
 });
