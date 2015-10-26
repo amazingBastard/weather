@@ -26,6 +26,7 @@ describe('Root View Component', function () {
     });
 
     it('should get Meteor Data from Openweather collection', function () {
+        // @TODO: make server test instead
         expect(data).toBeDefined();
         expect(data.cities.length).toBe(5);
         expect(data.cities).toContain({name: 'New York'});
@@ -38,6 +39,6 @@ describe('Root View Component', function () {
     it('should render options to choose different cities', function () {
         renderRoot({});
         expect($el.find('a')).toBe(true);
-        // @TODO: break this up
+        // @TODO: break this up into two functions
     });
 });

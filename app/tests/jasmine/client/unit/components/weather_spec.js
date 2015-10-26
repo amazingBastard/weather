@@ -28,4 +28,6 @@ describe('Weather View Component', function () {
     it('should have a figure caption with City name', function() {
         expect($el.text()).toContain('City');
     });
+
+    // @TODO: add more tests
 });
