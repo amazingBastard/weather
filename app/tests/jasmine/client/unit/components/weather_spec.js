@@ -25,7 +25,7 @@ describe('Weather View Component', function () {
         expect(component.props.name).toBe(true);
     });
 
-    it('should have a figure caption with City name', function() {
+    it('should have a figure caption with city name', function() {
         expect($el.find('h1').text()).toBe('City');
     });
 
