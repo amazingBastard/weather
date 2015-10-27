@@ -38,7 +38,7 @@ describe('Root View Component', function () {
 
     it('should render options to choose different cities', function () {
         renderRoot({});
-        expect($el.find('a')).toBe(true);
+        expect($el.find('a').text()).toBe('New York');
         // @TODO: break this up into two functions
     });
 });
