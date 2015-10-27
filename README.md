@@ -63,7 +63,7 @@ The app should now be running on:
 http://localhost:3000
 ```
 
-### Deploy
+### Deployment
 
 Make sure you have Meteor Up (mup) installed.
 
@@ -130,7 +130,7 @@ Configure your mup.json file for deployment in environments/production dir. This
 }
 ```
 
-Run ```mup setup``` to setup the server. Then, running ```mup deploy``` will deploy your app.
+From the environments/production dir, run ```mup setup``` to setup the server. Then, running ```mup deploy``` will deploy your app.
 
 Check out the [mup docs](https://github.com/arunoda/meteor-up) for more info.
 
